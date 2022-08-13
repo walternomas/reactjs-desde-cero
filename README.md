@@ -1,2 +1,2 @@
 # reactjs-desde-cero
-Curso de Reactjs desde Cero para principiantes 2022
+Curso de Reactjs desde Cero para principiantes 2022 por Fazt https://youtu.be/rLoWMU4L_qE
