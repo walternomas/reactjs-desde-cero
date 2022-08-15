@@ -6,15 +6,17 @@ import { Saludar } from "./Saludar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-function handleChange(event) {
-  console.log(event.target.value)
-}
-
 root.render(
   <>
     <TaskCard ready={true} />
     <Saludar />
     <Button />
-    <input id="hola" onChange={handleChange} />
+    <form onSubmit={(e)=> {
+      e.preventDefault();
+      alert('enviado');
+    }}>
+      <h1>Registro de Usuarios</h1>
+      <button>Send</button>
+    </form>
   </>
 );
