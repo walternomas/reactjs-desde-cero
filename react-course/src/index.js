@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Greeting, UserCard } from "./Greeting";
-import Product, { Navbar } from "./Product";
+import { Button } from "./Button";
+// import { Greeting, UserCard } from "./Greeting";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <div>
-    <Greeting title="Hola Mundo" name="Joe" />
+  <>
+    {/* <Greeting title="Hola Mundo" name="Joe" />
     <Greeting title="Hola React" name="Ryan" />
     <Greeting title="Hola JSX" />
     <Greeting title="Hola JavaScript" />
@@ -21,6 +21,10 @@ root.render(
       greet={function () {
         alert('Hello, React!');
       }}
-    />
-  </div>
+    /> */}
+    <Button text='Click me' />
+    <Button text='Pay me' />
+    <Button text='Go to' />
+    <Button />
+  </>
 );
