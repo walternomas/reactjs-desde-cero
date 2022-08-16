@@ -3,31 +3,21 @@ import ReactDOM from "react-dom/client";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-function Counter() {
-  const [counter, setCounter] = useState(0);
+function Message() {
+  const [message, setMessage] = useState("");
 
   return (
     <div>
-      <h1>Counter: {counter}</h1>
+      <input onChange={(e) => setMessage(e.target.value)} />
       <button
         onClick={() => {
-          setCounter(counter + 1);
+          alert("El mensaje es: " + message);
         }}
       >
-        Sumar
+        Save
       </button>
-      <button
-        onClick={() => {
-          setCounter(counter - 1);
-        }}
-      >
-        Restar
-      </button>
-      <button onClick={() => {
-        setCounter(1000);
-      }}>Reiniciar</button>
     </div>
   );
 }
 
-root.render(<Counter />);
+root.render(<Message />);
