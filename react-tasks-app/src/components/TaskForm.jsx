@@ -7,7 +7,7 @@ function TaskForm({ createTask }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     createTask({
-      title, 
+      title,
       description
     });
     setTitle('');
@@ -15,15 +15,15 @@ function TaskForm({ createTask }) {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <input 
-        placeholder="Escribe tu tarea..." 
-        onChange={(e) => setTitle(e.target.value)} 
+      <input
+        placeholder="Escribe tu tarea..."
+        onChange={(e) => setTitle(e.target.value)}
         value={title}
         autoFocus
       />
-      <textarea 
+      <textarea
         placeholder='Escribe la descripción de la tarea...'
-        onChange={(e) => setDescription(e.target.value)} 
+        onChange={(e) => setDescription(e.target.value)}
         value={description}
       ></textarea>
       <button>Guardar</button>
